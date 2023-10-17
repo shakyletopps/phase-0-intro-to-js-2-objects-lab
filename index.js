@@ -1,21 +1,21 @@
 // Write your solution in this file!
 
 
- 
+
 const employee = {
 name: 'John',
  streetAddress : '11 Broadway',
 };
- 
 
-function updateEmployeeWithKeyAndValue( employee, key, value) {
+
+function updateEmployeeWithKeyAndValue( employee, key, value){
     const updateEmployee = {...employee}
     updateEmployee[key] = 'Sam'
     updateEmployee[key] = '11 Broadway'
     return updateEmployee;
    }
 
-   
+
    function destructivelyUpdateEmployeeWithKeyAndValue( employee,key,value) {
      employee[key] = 'Sam';
      employee[key] = '12 Broadway';
@@ -32,4 +32,3 @@ function updateEmployeeWithKeyAndValue( employee, key, value) {
     delete employee[key];
     return employee;
    }
-   
